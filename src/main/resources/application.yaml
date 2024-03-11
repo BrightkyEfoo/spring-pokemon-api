@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: "org.mariadb.jdbc.Driver"
+    url: "jdbc:mariadb://${MYSQL_HOST:localhost}:3306/pokemons"
+    username: "root"
+    password: "12345678"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    generate-ddl: false
+server:
+  servlet:
+    context-path: "/api"
+  port: 9000
+
